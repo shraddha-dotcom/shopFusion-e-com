@@ -1,7 +1,7 @@
 
-import img1 from '../../assets/images/img1.PNG'
-import img2 from '../../assets/images/img.PNG'
-import img3 from '../../assets/images/Shopping.PNG'
+import img1 from '../../assets/images/img1.png'
+import img2 from '../../assets/images/img.png'
+import img3 from '../../assets/images/Shopping.png'
 import Slider from 'react-slick';
 
 
