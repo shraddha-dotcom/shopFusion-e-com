@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { removeFromWishlist, addToWishlist } from '../../redux/action';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import Cookies from 'js-cookie';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const WishlistButton = ({ product }) => {
