@@ -17,7 +17,6 @@ const WomenSection = lazy(() => import("./pages/ProductList/WomenSection"));
 const KidsSection = lazy(() => import("./pages/ProductList/KidsSection"));
 const Electronics = lazy(() => import("./pages/ProductList/Electronics"));
 const HomeDecor = lazy(() => import("./pages/ProductList/HomeDecor"));
-const Products = lazy(() => import("./pages/Products/Products"));
 const ProductDetails = lazy(() => import("./pages/ProductDetails"));
 const Wishlist = lazy(() => import("./pages/Wishlist"));
 const WishlistPage = lazy(() => import("./pages/Wishlist/WishlistPage"));
