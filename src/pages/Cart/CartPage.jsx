@@ -1,18 +1,19 @@
 
 import { useDispatch, useSelector } from 'react-redux';
-import { removeFromCart } from '../../redux/action';
+import { removeAllfromcart } from '../../redux/action';
 import { Link } from 'react-router-dom';
 import { FaTrash } from 'react-icons/fa';
 import CartButton from '.';
 
 const CartPage = () => {
     const dispatch = useDispatch();
+
     const cart = useSelector((state) => state.cart || []);
     // console.log("Cart State:", cart); 
 
 
     const handleRemoveFromCart = (productId) => {
-        dispatch(removeFromCart(productId));
+        dispatch(removeAllfromcart(productId));
     };
 
     const totalPrice = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);

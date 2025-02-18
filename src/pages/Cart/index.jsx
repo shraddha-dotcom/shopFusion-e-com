@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Cookies from 'js-cookie';
+import { Link, useLocation } from 'react-router-dom';
 import { addToCart, removeFromCart, updateQuantity } from '../../redux/action';
 import { CiSquarePlus, CiSquareMinus } from 'react-icons/ci';
 import PropTypes from 'prop-types';
@@ -10,6 +11,7 @@ const CartButton = ({ product }) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart || []);
   const isUserLoggedIn = Cookies.get("user");
+  const location = useLocation();
 
   const showNotification = (message) => {
     setNotification(message);
@@ -54,7 +56,7 @@ const CartButton = ({ product }) => {
       {!cartItem ? (
 
         <button
-          className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-orange-400"
+          className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-orange-400 transition"
           onClick={handleAddToCart}
         >
           Add to Cart
@@ -65,7 +67,7 @@ const CartButton = ({ product }) => {
         /* If product is in cart, show quantity controls */
         <div className="flex items-center gap-2">
           {/* Decrement button */}
-          <button className="text-black text-3xl" onClick={handleDecreaseQuantity}>
+          <button className="text-black text-3xl hover:text-gray-600 transition-all" onClick={handleDecreaseQuantity}>
             <CiSquareMinus data-testid="CiSquareMinus" />
           </button>
 
@@ -73,10 +75,23 @@ const CartButton = ({ product }) => {
           <span className="px-2 text-2xl">{cartItem.quantity}</span>
 
           {/* Increment button */}
-          <button className="text-black text-3xl" onClick={handleIncreaseQuantity}>
+          <button className="text-black text-3xl hover:text-gray-600 transition-all" onClick={handleIncreaseQuantity}>
             <CiSquarePlus data-testid="CiSquarePlus" />
           </button>
+
+          {/* "Go to Cart" Button */}
+
+          {location.pathname !== "/cart-page" && (
+            <Link
+              to="/cart-page"
+              className="bg-primary text-sm text-white p-1 rounded-md hover:bg-orange-400 transition-all"
+            >
+              Go to Cart
+            </Link>
+          )}
+
         </div>
+
       )}
     </div>
   );

@@ -72,7 +72,7 @@ const Profile = () => {
             {menuOpen && (
                 <div
                     ref={menuRef}
-                    className="absolute text-base top-12 right-0 bg-white shadow-lg rounded-lg z-10 w-72 "
+                    className="absolute text-base top-12 left-1/2 -translate-x-1/2 bg-white shadow-lg rounded-lg z-10 w-72 "
                     role="menu"
                 >
                     <div className="p-5">
