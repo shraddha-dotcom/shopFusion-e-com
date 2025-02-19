@@ -15,7 +15,7 @@ const Subscribe = () => {
         <div
             data-aos="zoom-in"
             className='bg-gray-100 dark:bg-gray-800
-                 text-white mb-20'
+                  mb-20'
             style={bannerImg}
         >
             <div className='container backdrop-blur-sm py-10'>

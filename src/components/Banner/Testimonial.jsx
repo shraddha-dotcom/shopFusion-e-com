@@ -5,13 +5,13 @@ const TestimonialData = [
     {
         id: 1,
         name: "Shraddha",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime tenetur impedit fugit aliquam maiores.",
+        text: "I was amazed by the quality of the products and the fast delivery! The customer service team was super helpful, and I will definitely be shopping here again. Highly recommend!",
         img: "https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA",
     },
     {
         id: 2,
         name: "Amit",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime tenetur impedit fugit aliquam maiores.",
+        text: "This app has simplified my daily tasks like never before. The seamless integration with my workflow saves me hours every week. An absolute must-have!",
         img: "https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g",
     },
     {

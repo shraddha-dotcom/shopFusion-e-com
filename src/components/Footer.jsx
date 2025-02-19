@@ -80,7 +80,7 @@ const Footer = () => {
         {/* Bottom  */}
         <div className="text-center mt-8">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
+            &copy; {new Date().getFullYear()} ShopFusion. All rights reserved.
           </p>
         </div>
       </div>

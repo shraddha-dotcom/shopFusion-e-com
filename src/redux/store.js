@@ -8,7 +8,7 @@ import storage from 'redux-persist/lib/storage';
 const persistConfig = {
     key: 'root',  // The key for storing the state in local storage
     storage,   
-    blacklist: ["cart"],
+    
   }
 
   // Creating a persisted reducer to keep the state in sync with local storage
