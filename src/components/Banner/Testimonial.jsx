@@ -5,7 +5,7 @@ const TestimonialData = [
     {
         id: 1,
         name: "Shraddha",
-        text: "I was amazed by the quality of the products and the fast delivery! The customer service team was super helpful, and I will definitely be shopping here again. Highly recommend!",
+        text: "I was amazed by the quality of the products and the fast delivery! The customer service team was super helpful.",
         img: "https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA",
     },
     {
